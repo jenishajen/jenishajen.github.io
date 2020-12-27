@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+          * {box-sizing: border-box}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+  background-color:#375E97;
+}
+
+
+.tablink {
+  background-color:#021C1E;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 30px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+
+.tabcontent {
+  color:black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+#Home {background-color:#375E97;}
+#CAUSES {background-color:#375E97;}
+#SYMPTOMS {background-color:#375E97;}
+#PREVENTION {background-color:#375E97;}
+
+      </style>
+      <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+    </head>
+    <body>
+        <div><img src='https://www.news-medical.net/image.axd?picture=2016%2F5%2Fshutterstock_367972454.jpg' width='1540'height='500'>
+        <h1 style='position: absolute;top:10%;left:40%;color:white;font-size:50px;'>Binge Eating Disorder</h1></div>
+        <button class="tablink" onclick="openPage('Home', this, '#375E97')">DESCRIPTION</button>
+<button class="tablink" onclick="openPage('CAUSES', this, '#375E97')" id="defaultOpen">CAUSES</button>
+<button class="tablink" onclick="openPage('SYMPTOMS', this, '#375E97')">SYMPTOMS</button>
+<button class="tablink" onclick="openPage('PREVENTION', this, '#375E97')">PREVENTION</button>
+
+<div id="Home" class="tabcontent">
+
+  <h2>DESCRIPTION</h2>
+  <img src='https://www.eurekaselect.com/images/graphical-abstract/cwhr/15/2/004.jpg'>
+  <p >
+  <pre style='font-size:25px;'>People with BED may eat a lot of food in a short amount of time, even if they aren’t hungry.
+  Emotional stress or destress often plays a role and might trigger a period of binge eating.
+
+  A person might feel a sense of release or relief during a binge but experience feelings of
+  shame or loss of control afterward.</pre>
+    
+	</p>
+</div>
+
+<div id="CAUSES" class="tabcontent">
+  <h2>CAUSES</h2>
+  <p >
+    <pre style='font-size:25px;'>
+    
+        While the exact cause of BED is unknown, there are a variety of factors that are thought to influence the
+		development of this disorder. These factors are:
+
+        <h5>Biological:</h5>
+		Biological abnormalities, such as hormonal irregularities or genetic mutations, may be associated
+		with compulsive eating and food addiction.
+        <h5>Psychological:</h5>
+		A strong correlation has been established between depression and binge eating. Body dissatisfaction,
+		low self-esteem, and difficulty coping with feelings can also contribute to binge eating disorder.
+        <h5>Social and Cultural:</h5>
+		Traumatic situations, such as a history of sexual abuse, can increase the risk of binge eating.
+		Social pressures to be thin, which are typically influenced through media, can trigger emotional eating.
+		Persons subject to critical comments about their bodies or weight may be especially vulnerable to binge eating disorder.</pre>
+    </p> 
+</div>
+
+<div id="SYMPTOMS" class="tabcontent">
+  <h2>SYMPTOMS</h2>
+  <p>
+  <pre style='font-size:25px;'>
+    For a healthcare professional to diagnose BED, three or more of the following symptoms must be
+	present:
+
+      ⇨eating much more rapidly than normal
+      ⇨eating until uncomfortably full
+      ⇨eating large amounts without feeling hungry
+      ⇨eating alone due to feelings of embarrassment and shame
+      ⇨feelings of guilt or disgust with oneself.</pre>
+	 </p>
+</div>
+
+<div id="PREVENTION" class="tabcontent">
+  <h2>PREVENTION</h2>
+  <p>
+  <pre style='font-size:25px;'>
+      ⇨Go for a Walk
+      ⇨Sleep It Off. Getting enough sleep after an episode of overeating is a good way to fight
+	  off cravings and get the next day off on the right foot
+      ⇨Eat a Healthy Breakfast
+      ⇨Stay Hydrated
+      ⇨Try Yoga
+      ⇨Fill up on Veggies
+      ⇨Avoid Skipping Meals
+      ⇨Start Exercising</pre></p>
+</div>
+    </body>
+</html>

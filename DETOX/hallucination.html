@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+          * {box-sizing: border-box}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+  background-color:#375E97;
+}
+
+
+.tablink {
+  background-color:#021C1E;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 30px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+
+.tabcontent {
+  color:black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+#Home {background-color:#375E97;}
+#CAUSES {background-color:#375E97;}
+#SYMPTOMS {background-color:#375E97;}
+#PREVENTION {background-color:#375E97;}
+
+      </style>
+      <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+    </head>
+    <body>
+        <div><img src='https://wexnermedical.osu.edu/-/media/images/wexnermedical/blog/2019-stories/06/hallucinations/hallucinations_blog_large.jpg?la=en&hash=180AF6C1373FC9A8A4A6DB67ABE752878D0B1B88' width='1540'height='500'>
+        <h1 style='position: absolute;top:10%;left:40%;color:white;font-size:50px;'>HALLUCINATIONS</h1></div>
+        <button class="tablink" onclick="openPage('Home', this, '#375E97')">DESCRIPTION</button>
+<button class="tablink" onclick="openPage('CAUSES', this, '#375E97')" id="defaultOpen">CAUSES</button>
+<button class="tablink" onclick="openPage('SYMPTOMS', this, '#375E97')">SYMPTOMS</button>
+<button class="tablink" onclick="openPage('PREVENTION', this, '#375E97')">PREVENTION</button>
+
+<div id="Home" class="tabcontent">
+
+  <h2>DESCRIPTION</h2>
+  <img src='https://images.takeshape.io/fd194db7-7b25-4b5a-8cc7-da7f31fab475/dev/44173ba9-f925-42c8-9794-5dadb7393fd2/14578747638_2f1a024e3d_o.jpg?auto=compress%2Cformat&crop=faces&fit=crop&fm=jpg&h=360&q=70&w=540'>
+  <p >
+  <pre style='font-size:25px;'>
+  Hallucinations are sensations that appear to be real but are created within the mind.Examples
+  include seeing things that are not there, hearing voices or other sounds, experiencing body
+  sensations like crawling feelings on the skin, or smelling odors that are not there..
+  
+  </pre>
+    
+	</p>
+</div>
+
+<div id="CAUSES" class="tabcontent">
+  <h2>CAUSES</h2>
+  <p >
+    <pre style='font-size:25px;'>
+⇨Lack of sleep
+⇨Medications
+⇨Other condition
+	   ⇨high fevers, especially in children and the elderly
+       ⇨migraine
+       ⇨social isolation, particularly in older adults
+       ⇨seizures
+       ⇨deafness, blindness, or vision problems
+       ⇨epilepsy (in some cases, epileptic seizures can cause you to see flashing shapes or
+	   bright spots)
+       ⇨terminal illnesses, such as stage 3 HIV (AIDS), brain cancer, or kidney and liver
+	   failure</pre>
+    </p> 
+</div>
+
+<div id="SYMPTOMS" class="tabcontent">
+  <h2>SYMPTOMS</h2>
+  <p>
+  <pre style='font-size:25px;'>
+    Hallucinations can have a range of symptoms, depending on the type, including:
+
+      ⇨Feeling sensations in the body (such as a crawling feeling on the skin or movement)
+      ⇨Hearing sounds (such as music, footsteps, or banging of doors)
+      ⇨Hearing voices (can include positive or negative voices, such as a voice
+	  commanding you to harm yourself or others)
+      ⇨Seeing objects, beings, or patterns or lights
+      ⇨Smelling an odor (can be pleasant or foul and in one or both nostrils)
+      ⇨Tasting something (often a metallic taste)</pre>
+	 </p>
+</div>
+
+<div id="PREVENTION" class="tabcontent">
+  <h2>PREVENTION</h2>
+  <p>
+  <pre style='font-size:25px;'>
+  The following self-help strategies can help patients cope with auditory hallucinations
+
+      ⇨Exercise
+      ⇨Humming or singing a song several times (like "Happy Birthday")
+      ⇨Ignoring the voices
+      ⇨Listening to music
+      ⇨Reading (forward and backward)
+      ⇨Talking with others.</pre></p>
+</div>
+    </body>
+</html>

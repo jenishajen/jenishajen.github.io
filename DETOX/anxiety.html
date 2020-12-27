@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+          * {box-sizing: border-box}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+  background-color:#375E97;
+}
+
+
+.tablink {
+  background-color:#021C1E;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 30px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+
+.tabcontent {
+  color:black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+#Home {background-color:#375E97;}
+#CAUSES {background-color:#375E97;}
+#SYMPTOMS {background-color:#375E97;}
+#PREVENTION {background-color:#375E97;}
+
+      </style>
+      <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+    </head>
+    <body>
+        <div><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGuzWY2yVRmUQPi6z_qy2q9Uo0LYzlhggPxQ&usqp=CAU' width='1540'height='500'>
+        <h1 style='position: absolute;top:10%;left:40%;color:white;font-size:50px;'>ANXIETY</h1></div>
+        <button class="tablink" onclick="openPage('Home', this, '#375E97')">DESCRIPTION</button>
+<button class="tablink" onclick="openPage('CAUSES', this, '#375E97')" id="defaultOpen">CAUSES</button>
+<button class="tablink" onclick="openPage('SYMPTOMS', this, '#375E97')">SYMPTOMS</button>
+<button class="tablink" onclick="openPage('PREVENTION', this, '#375E97')">PREVENTION</button>
+
+<div id="Home" class="tabcontent">
+
+  <h2>DESCRIPTION</h2>
+  <img src='https://ruinmyweek.com/wp-content/uploads/2020/01/anxiety-memes-17.jpg'width='500'height='400'>
+  <p >
+  <pre style='font-size:25px;'>It’s normal to feel anxious about moving to a new place,
+  starting a new job, or taking a test. This type of anxiety is unpleasant, but it may
+  motivate you to work harder and to do a better job. Ordinary anxiety is a feeling that
+  comes and goes, but does not interfere with your everyday life.
+
+In the case of an anxiety disorder, the feeling of fear may be with you all the time.
+It is intense and sometimes debilitating.
+
+This type of anxiety may cause you to stop doing things you enjoy. In extreme cases,
+it may prevent you from entering an elevator, crossing the street, or even leaving your
+home. If left untreated, the anxiety will keep getting worse.
+
+Anxiety disorders are the most common form of emotional disorder and can affect anyone
+at any age. According to the American Psychiatric Association, women are more likely
+than men to be diagnosed with an anxiety disorder.</pre>
+    
+	</p>
+</div>
+
+<div id="CAUSES" class="tabcontent">
+  <h2>CAUSES</h2>
+  <p >
+    <pre style='font-size:25px;'>
+    Researchers are not sure of the exact cause of anxiety. But, it’s likely a combination
+	of factors play a role. These include genetic and environmental factors, as well as
+	brain chemistry.
+
+In addition, researchers believe that the areas of the brain responsible for controlling
+fear may be impacted.
+
+Current research of anxiety is taking a deeper look at the parts of the brain that are
+involved with anxiety.</pre>
+    </p> 
+</div>
+
+<div id="SYMPTOMS" class="tabcontent">
+  <h2>SYMPTOMS</h2>
+  <p>
+  <pre style='font-size:25px;'>
+    Symptoms of general anxiety include:
+
+      ⇨increased heart rate
+      ⇨rapid breathing
+      ⇨restlessness
+      ⇨trouble concentrating
+      ⇨difficulty falling asleep
+	  
+	 Common symptoms of an anxiety attack include:
+
+      ⇨feeling faint or dizzy
+      ⇨shortness of breath
+      ⇨dry mouth
+      ⇨sweating
+      ⇨chills or hot flashes
+      ⇨apprehension and worry
+      ⇨restlessness
+      ⇨distress
+      ⇨fear
+      ⇨numbness or tingling</pre>
+	 </p>
+</div>
+
+<div id="PREVENTION" class="tabcontent">
+  <h2>PREVENTION</h2>
+  <p>
+  <pre style='font-size:25px;'>
+  These include:
+
+      ⇨getting enough sleep
+      ⇨meditating
+      ⇨staying active and exercising
+      ⇨eating a healthy diet
+      ⇨staying active and working out
+      ⇨avoiding alcohol
+      ⇨avoiding caffeine
+      ⇨quitting smoking cigarettes</pre></p>
+</div>
+    </body>
+</html>

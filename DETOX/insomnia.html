@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+          * {box-sizing: border-box}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+  background-color:#375E97;
+}
+
+
+.tablink {
+  background-color:#021C1E;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 30px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+
+.tabcontent {
+  color:black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+#Home {background-color:#375E97;}
+#CAUSES {background-color:#375E97;}
+#SYMPTOMS {background-color:#375E97;}
+#PREVENTION {background-color:#375E97;}
+
+      </style>
+      <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+    </head>
+    <body>
+        <div><img src='https://64.media.tumblr.com/tumblr_m4z3ug7Ypp1rsyukao1_r1_1280.jpg' width='1540'height='500'>
+        <h1 style='position: absolute;top:10%;left:40%;color:white;font-size:50px;'>INSOMNIA</h1></div>
+        <button class="tablink" onclick="openPage('Home', this, '#375E97')">DESCRIPTION</button>
+<button class="tablink" onclick="openPage('CAUSES', this, '#375E97')" id="defaultOpen">CAUSES</button>
+<button class="tablink" onclick="openPage('SYMPTOMS', this, '#375E97')">SYMPTOMS</button>
+<button class="tablink" onclick="openPage('PREVENTION', this, '#375E97')">PREVENTION</button>
+
+<div id="Home" class="tabcontent">
+
+  <h2>DESCRIPTION</h2>
+  <img src='https://i.pinimg.com/236x/84/ed/6c/84ed6ca7deda4591d54d53bc7e6a6a59.jpg'>
+  <p >
+  <pre style='font-size:25px;'>Insomnia is a type of sleep disorder. Individuals with insomnia find it difficult to fall asleep, stay asleep, or both.
+
+    People with insomnia often don’t feel refreshed when they wake up from sleeping, either. This can lead to fatigue and other symptoms.
+    
+    Insomnia is the most common of all sleep disorders, according to the American Psychiatric Association (APA).
+    
+    In fact, the APA states that PREVENTION one-third of all adults report insomnia symptoms. Between 6 to 10 percent of all adults have symptoms severe enough for them to be diagnosed with insomnia disorder.
+    
+    The APA defines insomnia as a disorder in which people have trouble falling asleep or staying asleep. Doctors make a clinical diagnosis of insomnia if both of these criteria apply:
+             ⇨ Sleep difficulties occurring at least three nights a week for a minimum of 3 months.
+             ⇨ Sleep difficulties creating major distress or functional difficulties in a person’s life.</pre>
+    
+	</p>
+</div>
+
+<div id="CAUSES" class="tabcontent">
+  <h2>CAUSES</h2>
+  <p >
+    <pre style='font-size:25px;'>
+    The causes of your insomnia will depend on the type of sleeplessness you experience.
+
+    Short-term insomnia, or acute insomnia, may be caused by a number of things including:
+    
+      ⇨stress
+      ⇨an upsetting or traumatic event
+      ⇨changes to your sleep habits, like sleeping in a hotel or new home
+      ⇨physical pain
+      ⇨jet lag
+      ⇨certain medications
+      ⇨Chronic insomnia lasts for at least 3 months and can be primary or secondary.
+
+   Primary insomnia has no known cause. Secondary insomnia occurs with another condition that can include:
+
+     ⇨medical conditions that make it harder to sleep, such as arthritis or back pain
+     ⇨psychological issues, such as anxiety or depression
+     ⇨substance use
+     ⇨sleep apnea
+     ⇨diabetes</pre>
+    </p> 
+</div>
+
+<div id="SYMPTOMS" class="tabcontent">
+  <h2>SYMPTOMS</h2>
+  <p>
+  <pre style='font-size:25px;'>
+    Insomnia symptoms may include:
+
+     ⇨Difficulty falling asleep at night
+     ⇨Waking up during the night
+     ⇨Waking up too early
+     ⇨Not feeling well-rested after a night's sleep
+     ⇨Daytime tiredness or sleepiness
+     ⇨Irritability, depression or anxiety
+     ⇨Difficulty paying attention, focusing on tasks or remembering
+     ⇨Increased errors or accidents
+     ⇨Ongoing worries about sleep.</pre>
+	 </p>
+</div>
+
+<div id="PREVENTION" class="tabcontent">
+  <h2>PREVENTION</h2>
+  <p>
+  <pre style='font-size:25px;'>
+  Good sleep habits can help prevent insomnia and promote sound sleep:
+
+     ⇨Keep your bedtime and wake time consistent from day to day, including weekends.
+     ⇨Stay active — regular activity helps promote a good night's sleep.
+     ⇨Check your medications to see if they may contribute to insomnia.
+     ⇨Avoid or limit naps.
+     ⇨Avoid or limit caffeine and alcohol, and don't use nicotine.
+     ⇨Avoid large meals and beverages before bedtime.
+     ⇨Make your bedroom comfortable for sleep and only use it for sex or sleep.
+     ⇨Create a relaxing bedtime ritual, such as taking a warm bath, reading or listening to soft music.</pre></p>
+</div>
+    </body>
+</html>

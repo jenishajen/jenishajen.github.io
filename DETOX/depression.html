@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+          * {box-sizing: border-box}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+  background-color:#375E97;
+}
+
+
+.tablink {
+  background-color:#021C1E;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 30px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+
+.tabcontent {
+  color:black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+#Home {background-color:#375E97;}
+#CAUSES {background-color:#375E97;}
+#SYMPTOMS {background-color:#375E97;}
+#PREVENTION {background-color:#375E97;}
+
+      </style>
+      <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+    </head>
+    <body>
+        <div><img src='https://www.rtor.org/wp-content/uploads/2017/04/pexels-girl-on-pier-grayscale-1024x683.jpg' width='1540'height='500'>
+        <h1 style='position: absolute;top:10%;left:40%;color:black;font-size:50px;'>DEPRESSION</h1></div>
+        <button class="tablink" onclick="openPage('Home', this, '#375E97')">DESCRIPTION</button>
+<button class="tablink" onclick="openPage('CAUSES', this, '#375E97')" id="defaultOpen">CAUSES</button>
+<button class="tablink" onclick="openPage('SYMPTOMS', this, '#375E97')">SYMPTOMS</button>
+<button class="tablink" onclick="openPage('PREVENTION', this, '#375E97')">PREVENTION</button>
+
+<div id="Home" class="tabcontent">
+
+  <h2>DESCRIPTION</h2>
+  <img src='https://lh3.googleusercontent.com/proxy/NKXmAR7tGu23TECotWPblVPuK8ngFnVbCjPJFkM5FP2S8l5UQ-h5BW2Zfg2x-yD3Oi2K3gK1eJJAi4lJOwTGRmexWVxL7ImJYzr8VFDFn_ms47xAXYxjSoFnKld0zhvNplCU_JZb7bEiPdPkGq9y3W8-Gt6kiP4Xd5YgB6TuU4oWAMpwb8Mc4EMo1WDR-YBbFBp7gswLhQEOgPI'>
+  <p >
+  <pre style='font-size:25px;'>
+  Depression (major depressive disorder) is a common and serious medical illness that negatively
+  affects how you feel, the way you think and how you act. Fortunately, it is also treatable.
+  Depression causes feelings of sadness and/or a loss of interest in activities you once enjoyed.
+  It can lead to a variety of emotional and physical problems and can decrease your ability to
+  function at work and at home.</pre>
+    
+	</p>
+</div>
+
+<div id="CAUSES" class="tabcontent">
+  <h2>CAUSES</h2>
+  <p >
+    <pre style='font-size:25px;'>
+    Common causes include:
+
+<h5>Family history.</h5> 
+     ⇨You’re at a higher risk for developing depression if you have a family history of
+	 depression or another mood disorder.
+<h5>Early childhood trauma.</h5>
+     ⇨Some events affect the way your body reacts to fear and stressful situations.
+<h5>Brain structure.</h5>
+     ⇨There’s a greater risk for depression if the frontal lobe of your brain is less 
+	 active. However,scientists don’t know if this happens before or after the onset of
+	 depressive symptoms.
+<h5>Medical conditions.</h5>
+     ⇨Certain conditions may put you at higher risk, such as chronic illness, insomnia,
+	 chronic pain, or attention-deficit hyperactivity disorder (ADHD).
+<h5>Drug use.</h5>
+     ⇨A history of drug or alcohol misuse can affect your risk.
+
+About 21 percent of people who have a substance use problem also experience depression.
+In addition to these causes, other risk factors for depression include:
+
+     ⇨low self-esteem or being self-critical
+     ⇨personal history of mental illness
+     ⇨certain medications
+     ⇨stressful events, such as loss of a loved one, economic problems, or a divorce
+	</pre>
+    </p> 
+</div>
+
+<div id="SYMPTOMS" class="tabcontent">
+  <h2>SYMPTOMS</h2>
+  <p>
+  <pre style='font-size:25px;'>
+    Depression symptoms can vary from mild to severe and can include:
+
+      ⇨Feeling sad or having a depressed mood
+      ⇨Loss of interest or pleasure in activities once enjoyed
+      ⇨Changes in appetite — weight loss or gain unrelated to dieting
+      ⇨Trouble sleeping or sleeping too much
+      ⇨Loss of energy or increased fatigue
+      ⇨Increase in purposeless physical activity (e.g., inability to sit still, pacing,
+	  handwringing) or slowed movements or speech (these actions must be severe enough
+	  to be observable by others)
+      ⇨Feeling worthless or guilty
+      ⇨Difficulty thinking, concentrating or making decisions
+      ⇨Thoughts of death or suicide.</pre>
+	 </p>
+</div>
+
+<div id="PREVENTION" class="tabcontent">
+  <h2>PREVENTION</h2>
+  <p>
+  <pre style='font-size:25px;'>
+ There’s no sure way to prevent depression. But you can:
+
+     ⇨Find ways to handle stress and improve your self-esteem.
+     ⇨Take good care of yourself. Get enough sleep, eat well, and exercise regularly.
+     ⇨Reach out to family and friends when times get hard.
+     ⇨Get regular medical checkups, and see your provider if you don’t feel right.
+     ⇨Get help if you think you’re depressed. If you wait, it could get worse..</pre></p>
+</div>
+    </body>
+</html>
